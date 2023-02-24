@@ -1,4 +1,4 @@
-	package com.cg.fms.controllers;
+package com.cg.fms.controllers;
 
 
 import java.util.List;
@@ -65,6 +65,26 @@ public class BookingController {
 		return rEntity;
 
 	}
+	
+//	@Autowired
+//	RestTemplate rt;
+	
+	
+//	@PostMapping("/bookings/flights")
+//	public ResponseEntity<Flight> addFlight(@RequestBody Flight flight) {
+//		String url = "http://localhost:8085/flights";
+//		ResponseEntity<Flight> rEntity = rt.postForEntity(url, flight, Flight.class);
+//		return rEntity;
+//	
+//}
+//	@GetMapping("/bookings/flights")
+//	public List<Flight> viewFlight(){
+//		String url = "http://localhost:8085/flights";
+//		List<Flight> list = Arrays.asList(rt.getForObject(url, Flight[].class));
+//		
+//		return list;
+//}
+	
 	
 	
 	

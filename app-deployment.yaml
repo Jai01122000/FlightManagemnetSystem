@@ -1,0 +1,23 @@
+apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
+kind: Deployment  #What kind of object you want to create
+metadata: #deployment name, helps uniquely identify the object
+   name: flightmanagement
+
+spec:  
+  selector:
+    matchLabels:
+      app: flightmanagement 
+
+
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: flightmanagement
+    spec:   #What state you desire for the object
+
+      containers:
+      - name: flightmanagement #container name
+        image: 'jaikumar01/flightmanagement:v1' #image name
+        ports:
+        - containerPort: 8085 # app runs on port 8085 inside container

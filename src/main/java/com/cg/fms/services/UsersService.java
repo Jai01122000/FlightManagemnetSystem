@@ -19,7 +19,7 @@ public class UsersService {
 	@Transactional
 
 	public Users addUser(Users u) {
-validateUser(u);
+		validateUser(u);
 		return userDao.save(u);
 	}
 

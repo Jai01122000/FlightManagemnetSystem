@@ -33,7 +33,7 @@ public class AdminController {
 	
 	
 
-
+	
 	@Operation(summary="To add Admin")
 	@PostMapping("/admins")
 	public ResponseEntity<String> addAdmin(@Valid @RequestBody Admin admin) {
@@ -42,7 +42,7 @@ public class AdminController {
 		return rEntity;
 	}
 
-	
+	// Controller method to authenticateAdmin
 	@Operation(summary = "To login with Correct Id and Password")
 	@PostMapping("/authenticate")
 	public String authenticateAdmin(@Valid @RequestBody Admin admin) {

@@ -14,6 +14,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -53,6 +55,7 @@ public class Users {
 	private String email;
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	List<Booking> booking = new ArrayList<>();
 
 	public Users(long id, String userType, @NotEmpty String userName, @NotEmpty String userPassword,

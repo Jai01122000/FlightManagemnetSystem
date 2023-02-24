@@ -10,7 +10,8 @@ import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 
 @SpringBootApplication
-@OpenAPIDefinition(info = @Info (title = "Flight Management System",contact = @Contact(name = "Jai",email = "jai-kumar.s-d@capgemini.com")))
+
+@OpenAPIDefinition(info = @Info (title = "Flight Management System"))
 public class FlightManagementSystemApplication2 {
 
 	public static void main(String[] args) {
