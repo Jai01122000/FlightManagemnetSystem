@@ -18,6 +18,6 @@ spec:
 
       containers:
       - name: flightmanagement #container name
-        image: 'jaikumar01/flightmanagement:v1' #image name
+        image: 'jaikumar01/flightmanagement:v2' #image name
         ports:
         - containerPort: 8085 # app runs on port 8085 inside container
