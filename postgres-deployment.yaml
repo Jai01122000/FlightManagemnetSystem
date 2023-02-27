@@ -31,4 +31,4 @@ spec:
               value:  root
              
             - name: POSTGRES_DB
-              value: training
+              value: flightmanagementdb
