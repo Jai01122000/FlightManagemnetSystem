@@ -8,6 +8,6 @@ spec: #What state you desire for the object
   ports:
     - port: 8085  #port at which service is internally available
       targetPort: 8085 #port of container
-      nodePort: 30001  # port at which service is externally available  range 30000- 32767 
+      #nodePort: 30001  # port at which service is externally available  range 30000- 32767 
       name: http
   type: LoadBalancer
